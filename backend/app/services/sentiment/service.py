@@ -42,6 +42,19 @@ class SentimentService:
         else:
             return "neutral"
 
+    def score_single_text(self, text: str) -> dict:
+        """Score an individual review text in real-time with VADER."""
+        scores = self.sia.polarity_scores(text or "")
+        compound = round(scores["compound"], 4)
+        category = self.classify_score(compound)
+        return {
+            "compound": compound,
+            "positive": round(scores["pos"], 4),
+            "neutral": round(scores["neu"], 4),
+            "negative": round(scores["neg"], 4),
+            "category": category,
+        }
+
     def analyze_unprocessed_reviews(self, limit: int = 500) -> int:
         """
         Process unanalyzed reviews in the staging table and update their scores.

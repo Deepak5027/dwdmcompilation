@@ -4,6 +4,7 @@ Sentiment Analysis API routes: VADER polarity classification and review summarie
 
 from typing import Optional
 from fastapi import APIRouter, Depends, Query
+from pydantic import BaseModel
 from sqlalchemy.orm import Session
 
 from app.database.connection import get_db
@@ -12,6 +13,18 @@ from app.schemas.common import APIResponse
 from app.services.sentiment.service import SentimentService
 
 router = APIRouter(prefix="/api/sentiment", tags=["Module 2: Sentiment Analysis"])
+
+
+class ScoreTextRequest(BaseModel):
+    text: str
+
+
+@router.post("/score-text", response_model=APIResponse)
+def score_text(req: ScoreTextRequest, db: Session = Depends(get_db)):
+    """Analyze a single review text in real-time using the VADER sentiment engine."""
+    service = SentimentService(db)
+    result = service.score_single_text(req.text)
+    return APIResponse(success=True, data=result, message="Review sentiment evaluated successfully")
 
 
 @router.post("/analyze", response_model=APIResponse)

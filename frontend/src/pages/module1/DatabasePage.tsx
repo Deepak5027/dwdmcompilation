@@ -78,7 +78,15 @@ export const DatabasePage: React.FC = () => {
           <div>
             <p className="text-[11px] font-bold text-slate-400 uppercase">Engine Dialect</p>
             <p className="text-sm font-bold text-teal-700 font-mono">
-              {isTablesLoading ? 'DETECTING...' : tablesData?.database_engine === 'MYSQL' ? 'MySQL 8.0 (Active)' : tablesData?.database_engine || 'DISCONNECTED'}
+              {isTablesLoading
+                ? 'DETECTING...'
+                : tablesData?.database_engine === 'SUPABASE'
+                ? 'Supabase PostgreSQL (Cloud Active)'
+                : tablesData?.database_engine === 'MYSQL'
+                ? 'MySQL 8.0 (Active)'
+                : tablesData?.database_engine === 'POSTGRESQL'
+                ? 'PostgreSQL (Active)'
+                : tablesData?.database_engine || 'DISCONNECTED'}
             </p>
           </div>
         </div>

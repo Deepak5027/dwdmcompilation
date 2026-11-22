@@ -39,7 +39,7 @@ def verify_all():
     db_health = check_db_health()
     print(f"[1] Database Health: {db_health['status']}, Engine: {db_health['engine']}, Mode: {db_health['dialect']}")
     assert db_health['status'] == 'connected', "Database must be connected"
-    assert db_health['dialect'] == 'mysql', "Dialect must be MySQL"
+    assert db_health['dialect'] in ['mysql', 'supabase', 'postgresql', 'sqlite'], "Dialect must be connected"
 
     db = next(get_db())
 

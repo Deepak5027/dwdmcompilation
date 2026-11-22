@@ -112,6 +112,15 @@ export const getSentimentSummary = (destinationId?: string) =>
     destination_breakdown: Array<{ destination_id: string; name: string; avg_score: number; positive: number; neutral: number; negative: number }>;
   }>>('/api/sentiment/summary', { params: { destination_id: destinationId } });
 
+export const scoreSingleText = (text: string) =>
+  api.post<APIResponse<{
+    compound: number;
+    positive: number;
+    neutral: number;
+    negative: number;
+    category: 'positive' | 'neutral' | 'negative';
+  }>>('/api/sentiment/score-text', { text });
+
 // === Demand & Forecasting (Module 2) ===
 export const getDemandTrends = (limit = 24) =>
   api.get<APIResponse<DemandTrend[]>>('/api/demand/trends', { params: { limit } });
