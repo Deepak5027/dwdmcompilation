@@ -15,13 +15,13 @@ export const NAVIGATION_ITEMS: NavItem[] = [
   },
   {
     id: 'module1',
-    label: 'Data & MySQL',
+    label: 'Data & Warehouse',
     iconName: 'Database',
     path: '/module1',
     children: [
       { id: 'm1-upload', label: 'Data Ingestion & Upload', path: '/module1/upload' },
       { id: 'm1-etl', label: 'Cleaning & ETL Pipeline', path: '/module1/etl' },
-      { id: 'm1-database', label: 'MySQL Star Schema', path: '/module1/database' },
+      { id: 'm1-database', label: 'Star Schema Warehouse', path: '/module1/database' },
     ],
   },
   {

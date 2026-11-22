@@ -23,7 +23,7 @@ export const TopBar: React.FC = () => {
   });
 
   const isConnected = !isHealthError && healthData?.database_status === 'connected';
-  const isMysql = isConnected && healthData?.database_mode === 'mysql';
+  const dbMode = healthData?.database_mode || '';
 
   // Generate dynamic breadcrumbs
   const pathnames = location.pathname.split('/').filter((x) => x);
@@ -152,16 +152,14 @@ export const TopBar: React.FC = () => {
           className={`hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-semibold ${
             isHealthLoading
               ? 'bg-amber-50 border-amber-200 text-amber-800'
-              : isMysql
-              ? 'bg-emerald-50 border-emerald-200 text-emerald-800'
               : isConnected
-              ? 'bg-sky-50 border-sky-200 text-sky-800'
+              ? 'bg-emerald-50 border-emerald-200 text-emerald-800'
               : 'bg-rose-50 border-rose-200 text-rose-800'
           }`}
         >
           {isHealthLoading ? (
             <RotateCw className="w-3.5 h-3.5 animate-spin text-amber-600" />
-          ) : isMysql ? (
+          ) : isConnected ? (
             <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
           ) : (
             <AlertCircle className="w-3.5 h-3.5 text-rose-600" />
@@ -169,8 +167,12 @@ export const TopBar: React.FC = () => {
           <span>
             {isHealthLoading
               ? 'Connecting...'
-              : isMysql
+              : dbMode === 'supabase'
+              ? 'Supabase Cloud Connected'
+              : dbMode === 'mysql'
               ? 'MySQL 8.0 Connected'
+              : dbMode === 'postgresql'
+              ? 'PostgreSQL Connected'
               : isConnected
               ? 'SQLite Connected'
               : 'Database Disconnected'}

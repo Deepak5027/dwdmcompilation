@@ -56,7 +56,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ collapsed, toggleSidebar }) =>
   });
 
   const isConnected = !isHealthError && healthData?.database_status === 'connected';
-  const isMysql = isConnected && healthData?.database_mode === 'mysql';
+  const dbMode = healthData?.database_mode || '';
 
   return (
     <aside
@@ -170,15 +170,10 @@ export const Sidebar: React.FC<SidebarProps> = ({ collapsed, toggleSidebar }) =>
           <div className="relative flex h-3 w-3 shrink-0">
             {isHealthLoading ? (
               <span className="relative inline-flex rounded-full h-3 w-3 bg-amber-400 animate-pulse"></span>
-            ) : isMysql ? (
+            ) : isConnected ? (
               <>
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
-              </>
-            ) : isConnected ? (
-              <>
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-3 w-3 bg-amber-500"></span>
               </>
             ) : (
               <span className="relative inline-flex rounded-full h-3 w-3 bg-rose-500"></span>
@@ -189,14 +184,18 @@ export const Sidebar: React.FC<SidebarProps> = ({ collapsed, toggleSidebar }) =>
               <span className="text-xs font-medium text-slate-200">
                 {isHealthLoading
                   ? 'Checking System...'
-                  : isMysql
-                  ? 'MySQL 8.0 & FastAPI Live'
+                  : dbMode === 'supabase'
+                  ? 'Supabase Cloud Live'
+                  : dbMode === 'mysql'
+                  ? 'MySQL 8.0 Live'
+                  : dbMode === 'postgresql'
+                  ? 'PostgreSQL Live'
                   : isConnected
-                  ? 'SQLite Active (Non-MySQL)'
+                  ? 'SQLite Active'
                   : 'Backend Disconnected'}
               </span>
               <span className="text-[10px] text-slate-400">
-                {isConnected ? 'Demonstration Benchmark Live' : 'Service Connection Offline'}
+                {isConnected ? 'Kimball Star Schema Live' : 'Service Connection Offline'}
               </span>
             </div>
           )}
