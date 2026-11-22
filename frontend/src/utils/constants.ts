@@ -14,6 +14,12 @@ export const NAVIGATION_ITEMS: NavItem[] = [
     path: '/',
   },
   {
+    id: 'tourist-guide',
+    label: 'Tourist Guide & Recommender',
+    iconName: 'Compass',
+    path: '/tourist-guide',
+  },
+  {
     id: 'module1',
     label: 'Data & Warehouse',
     iconName: 'Database',

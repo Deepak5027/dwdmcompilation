@@ -258,3 +258,66 @@ export interface TableColumn<T = any> {
   render?: (value: any, row: T) => React.ReactNode;
   width?: string;
 }
+
+// === Tourist Guide & Recommender Types ===
+export interface TouristDestination {
+  destination_id: string;
+  destination_name: string;
+  city: string;
+  district: string;
+  state: string;
+  latitude: number;
+  longitude: number;
+  tourism_category: string;
+  travel_vibe: string;
+  famous_for: string;
+  best_time_to_visit: string;
+  typical_dwell_time: string;
+  entry_fee: string;
+  average_rating: number;
+  visitor_count: number;
+  review_count: number;
+  positive_sentiment_pct: number;
+  distance_km: number | null;
+  recommendation_score: number;
+  is_must_visit: boolean;
+}
+
+export interface TouristVibe {
+  id: string;
+  label: string;
+  badge: string;
+  icon: string;
+  description: string;
+}
+
+export interface TouristMetadata {
+  districts: Array<{ name: string; count: number; normalized: string }>;
+  vibes: TouristVibe[];
+  district_coordinates: Record<string, { lat: number; lon: number; label: string }>;
+}
+
+export interface TripPlanResult {
+  stop_count: number;
+  total_distance_km: number;
+  total_est_drive_hours: number;
+  stops: Array<{
+    step: number;
+    destination_id: string;
+    destination_name: string;
+    city: string;
+    district: string;
+    latitude: number;
+    longitude: number;
+    travel_vibe: string;
+    typical_dwell_time: string;
+  }>;
+  segments: Array<{
+    from_id: string;
+    from_name: string;
+    to_id: string;
+    to_name: string;
+    distance_km: number;
+    est_drive_time_mins: number;
+  }>;
+}

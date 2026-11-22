@@ -5,6 +5,7 @@ import { AppLayout } from './components/layout/AppLayout';
 
 // Pages
 import { OverviewDashboard } from './pages/overview/OverviewDashboard';
+import { TouristGuidePage } from './pages/tourist/TouristGuidePage';
 import { DataUploadPage } from './pages/module1/DataUploadPage';
 import { ETLPage } from './pages/module1/ETLPage';
 import { DatabasePage } from './pages/module1/DatabasePage';
@@ -33,6 +34,7 @@ export const App: React.FC = () => {
         <Routes>
           <Route path="/" element={<AppLayout />}>
             <Route index element={<OverviewDashboard />} />
+            <Route path="tourist-guide" element={<TouristGuidePage />} />
             
             {/* Module 1: Data Collection & MySQL */}
             <Route path="module1">

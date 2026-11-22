@@ -20,6 +20,7 @@ from app.api.routes import (
     search_router,
     sentiment_router,
     spatial_router,
+    tourist_router,
     web_mining_router,
 )
 from app.core.config import settings
@@ -84,6 +85,7 @@ app.include_router(spatial_router)
 app.include_router(dashboard_router)
 app.include_router(reports_router)
 app.include_router(search_router)
+app.include_router(tourist_router)
 
 
 @app.get("/", include_in_schema=False)

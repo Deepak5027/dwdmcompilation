@@ -26,6 +26,7 @@ interface SidebarProps {
 
 const ICON_MAP: Record<string, React.ElementType> = {
   LayoutDashboard,
+  Compass,
   Database,
   Search,
   Map,

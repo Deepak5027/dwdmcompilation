@@ -21,6 +21,11 @@ class DimDestination(Base, TimestampMixin):
     latitude = Column(Float, nullable=True)
     longitude = Column(Float, nullable=True)
     tourism_category = Column(String(100), nullable=True, index=True)
+    famous_for = Column(String, nullable=True)
+    travel_vibe = Column(String(100), nullable=True, index=True)
+    best_time_to_visit = Column(String(255), nullable=True)
+    typical_dwell_time = Column(String(100), nullable=True)
+    entry_fee = Column(String(100), nullable=True)
     is_active = Column(Boolean, default=True)
 
     def __repr__(self) -> str:

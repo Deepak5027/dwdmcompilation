@@ -17,12 +17,15 @@ import type {
   HeatmapPoint,
   DashboardOverview,
   InsightCard,
+  TouristDestination,
+  TouristMetadata,
+  TripPlanResult,
 } from '../types';
 
 const API_BASE =
   typeof window !== 'undefined' && window.location.hostname === '127.0.0.1'
     ? 'http://127.0.0.1:8000'
-    : import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
+    : ((import.meta as any).env?.VITE_API_BASE_URL as string) || 'http://localhost:8000';
 
 export const api = axios.create({
   baseURL: API_BASE,
@@ -207,4 +210,24 @@ export const globalSearch = (q: string) =>
     '/api/search',
     { params: { q } }
   );
+
+// === Tourist Experience & Recommender ===
+export const getTouristMetadata = () =>
+  api.get<APIResponse<TouristMetadata>>('/api/tourist/metadata');
+
+export const getTouristRecommendations = (params?: {
+  district?: string;
+  vibe?: string;
+  origin_district?: string;
+  sort_by?: string;
+  min_rating?: number;
+}) =>
+  api.get<APIResponse<{
+    total_matches: number;
+    destinations: TouristDestination[];
+    applied_filters: Record<string, string>;
+  }>>('/api/tourist/destinations', { params });
+
+export const planTouristTrip = (destination_ids: string[]) =>
+  api.post<APIResponse<TripPlanResult>>('/api/tourist/plan-trip', { destination_ids });
 

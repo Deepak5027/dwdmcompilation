@@ -13,6 +13,7 @@ from app.api.routes.reports import router as reports_router
 from app.api.routes.search import router as search_router
 from app.api.routes.sentiment import router as sentiment_router
 from app.api.routes.spatial import router as spatial_router
+from app.api.routes.tourist import router as tourist_router
 from app.api.routes.web_mining import router as web_mining_router
 
 __all__ = [
@@ -28,5 +29,6 @@ __all__ = [
     "dashboard_router",
     "reports_router",
     "search_router",
+    "tourist_router",
 ]
 
