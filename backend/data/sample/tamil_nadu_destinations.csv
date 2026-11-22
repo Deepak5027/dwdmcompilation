@@ -1,0 +1,62 @@
+destination_id,destination_name,city,district,state,tourism_category,visitor_count,latitude,longitude,average_rating,review_count,observation_date
+# Synthetic Demonstration Data - Tamil Nadu Smart Tourism Intelligence Platform
+TN-CHE-01,Marina Beach & Promenade,Chennai,Chennai,Tamil Nadu,Beach,48500,13.0500,80.2824,4.4,3420,2023-01-15
+TN-CHE-01,Marina Beach & Promenade,Chennai,Chennai,Tamil Nadu,Beach,52100,13.0500,80.2824,4.5,3650,2023-05-15
+TN-CHE-01,Marina Beach & Promenade,Chennai,Chennai,Tamil Nadu,Beach,49200,13.0500,80.2824,4.4,3510,2023-10-15
+TN-CHE-01,Marina Beach & Promenade,Chennai,Chennai,Tamil Nadu,Beach,55400,13.0500,80.2824,4.6,3890,2023-12-15
+TN-CHE-01,Marina Beach & Promenade,Chennai,Chennai,Tamil Nadu,Beach,51000,13.0500,80.2824,4.5,3720,2024-05-15
+TN-MAM-01,Shore Temple & Pancha Rathas,Mahabalipuram,Chengalpattu,Tamil Nadu,Heritage,32400,12.6269,80.1927,4.7,2850,2023-01-15
+TN-MAM-01,Shore Temple & Pancha Rathas,Mahabalipuram,Chengalpattu,Tamil Nadu,Heritage,35600,12.6269,80.1927,4.8,3100,2023-05-15
+TN-MAM-01,Shore Temple & Pancha Rathas,Mahabalipuram,Chengalpattu,Tamil Nadu,Heritage,31800,12.6269,80.1927,4.7,2920,2023-10-15
+TN-MAM-01,Shore Temple & Pancha Rathas,Mahabalipuram,Chengalpattu,Tamil Nadu,Heritage,38900,12.6269,80.1927,4.8,3400,2023-12-15
+TN-MAM-01,Shore Temple & Pancha Rathas,Mahabalipuram,Chengalpattu,Tamil Nadu,Heritage,36800,12.6269,80.1927,4.8,3280,2024-05-15
+TN-NIL-01,Ooty Lake & Botanical Gardens,Ooty,Nilgiris,Tamil Nadu,Hill Station,42000,11.4102,76.6950,4.6,3600,2023-01-15
+TN-NIL-01,Ooty Lake & Botanical Gardens,Ooty,Nilgiris,Tamil Nadu,Hill Station,58500,11.4102,76.6950,4.7,4500,2023-05-15
+TN-NIL-01,Ooty Lake & Botanical Gardens,Ooty,Nilgiris,Tamil Nadu,Hill Station,38200,11.4102,76.6950,4.5,3200,2023-10-15
+TN-NIL-01,Ooty Lake & Botanical Gardens,Ooty,Nilgiris,Tamil Nadu,Hill Station,49800,11.4102,76.6950,4.6,4100,2023-12-15
+TN-NIL-01,Ooty Lake & Botanical Gardens,Ooty,Nilgiris,Tamil Nadu,Hill Station,61200,11.4102,76.6950,4.7,4850,2024-05-15
+TN-KOD-01,Kodaikanal Lake & Pillar Rocks,Kodaikanal,Dindigul,Tamil Nadu,Hill Station,36500,10.2381,77.4892,4.6,3100,2023-01-15
+TN-KOD-01,Kodaikanal Lake & Pillar Rocks,Kodaikanal,Dindigul,Tamil Nadu,Hill Station,52000,10.2381,77.4892,4.7,4200,2023-05-15
+TN-KOD-01,Kodaikanal Lake & Pillar Rocks,Kodaikanal,Dindigul,Tamil Nadu,Hill Station,34200,10.2381,77.4892,4.5,2950,2023-10-15
+TN-KOD-01,Kodaikanal Lake & Pillar Rocks,Kodaikanal,Dindigul,Tamil Nadu,Hill Station,45600,10.2381,77.4892,4.6,3800,2023-12-15
+TN-KOD-01,Kodaikanal Lake & Pillar Rocks,Kodaikanal,Dindigul,Tamil Nadu,Hill Station,54800,10.2381,77.4892,4.7,4450,2024-05-15
+TN-MDU-01,Meenakshi Sundareswarar Temple,Madurai,Madurai,Tamil Nadu,Temple,46200,9.9195,78.1193,4.9,4850,2023-01-15
+TN-MDU-01,Meenakshi Sundareswarar Temple,Madurai,Madurai,Tamil Nadu,Temple,44800,9.9195,78.1193,4.9,4700,2023-05-15
+TN-MDU-01,Meenakshi Sundareswarar Temple,Madurai,Madurai,Tamil Nadu,Temple,48500,9.9195,78.1193,4.9,5100,2023-10-15
+TN-MDU-01,Meenakshi Sundareswarar Temple,Madurai,Madurai,Tamil Nadu,Temple,53200,9.9195,78.1193,4.9,5400,2023-12-15
+TN-MDU-01,Meenakshi Sundareswarar Temple,Madurai,Madurai,Tamil Nadu,Temple,47600,9.9195,78.1193,4.9,4980,2024-05-15
+TN-RAM-01,Ramanathaswamy Temple & Agni Theertham,Rameswaram,Ramanathapuram,Tamil Nadu,Pilgrimage,38200,9.2876,79.3129,4.8,3600,2023-01-15
+TN-RAM-01,Ramanathaswamy Temple & Agni Theertham,Rameswaram,Ramanathapuram,Tamil Nadu,Pilgrimage,36400,9.2876,79.3129,4.7,3400,2023-05-15
+TN-RAM-01,Ramanathaswamy Temple & Agni Theertham,Rameswaram,Ramanathapuram,Tamil Nadu,Pilgrimage,41500,9.2876,79.3129,4.8,3900,2023-10-15
+TN-RAM-01,Ramanathaswamy Temple & Agni Theertham,Rameswaram,Ramanathapuram,Tamil Nadu,Pilgrimage,45800,9.2876,79.3129,4.8,4250,2023-12-15
+TN-RAM-01,Ramanathaswamy Temple & Agni Theertham,Rameswaram,Ramanathapuram,Tamil Nadu,Pilgrimage,39200,9.2876,79.3129,4.8,3750,2024-05-15
+TN-KAN-01,Vivekananda Rock Memorial & Thiruvalluvar Statue,Kanyakumari,Kanyakumari,Tamil Nadu,Coastal Heritage,39500,8.0883,77.5385,4.8,3800,2023-01-15
+TN-KAN-01,Vivekananda Rock Memorial & Thiruvalluvar Statue,Kanyakumari,Kanyakumari,Tamil Nadu,Coastal Heritage,41200,8.0883,77.5385,4.8,3950,2023-05-15
+TN-KAN-01,Vivekananda Rock Memorial & Thiruvalluvar Statue,Kanyakumari,Kanyakumari,Tamil Nadu,Coastal Heritage,38700,8.0883,77.5385,4.7,3700,2023-10-15
+TN-KAN-01,Vivekananda Rock Memorial & Thiruvalluvar Statue,Kanyakumari,Kanyakumari,Tamil Nadu,Coastal Heritage,46500,8.0883,77.5385,4.9,4400,2023-12-15
+TN-KAN-01,Vivekananda Rock Memorial & Thiruvalluvar Statue,Kanyakumari,Kanyakumari,Tamil Nadu,Coastal Heritage,43200,8.0883,77.5385,4.8,4150,2024-05-15
+TN-YER-01,Yercaud Lake & Lady's Seat,Yercaud,Salem,Tamil Nadu,Hill Station,19500,11.7753,78.2093,4.3,1650,2023-01-15
+TN-YER-01,Yercaud Lake & Lady's Seat,Yercaud,Salem,Tamil Nadu,Hill Station,27800,11.7753,78.2093,4.4,2200,2023-05-15
+TN-YER-01,Yercaud Lake & Lady's Seat,Yercaud,Salem,Tamil Nadu,Hill Station,18200,11.7753,78.2093,4.3,1500,2023-10-15
+TN-YER-01,Yercaud Lake & Lady's Seat,Yercaud,Salem,Tamil Nadu,Hill Station,24100,11.7753,78.2093,4.4,1950,2023-12-15
+TN-THA-01,Brihadisvara Great Chola Temple,Thanjavur,Thanjavur,Tamil Nadu,Heritage,34500,10.7826,79.1317,4.9,3500,2023-01-15
+TN-THA-01,Brihadisvara Great Chola Temple,Thanjavur,Thanjavur,Tamil Nadu,Heritage,32800,10.7826,79.1317,4.8,3300,2023-05-15
+TN-THA-01,Brihadisvara Great Chola Temple,Thanjavur,Thanjavur,Tamil Nadu,Heritage,37200,10.7826,79.1317,4.9,3800,2023-10-15
+TN-THA-01,Brihadisvara Great Chola Temple,Thanjavur,Thanjavur,Tamil Nadu,Heritage,41000,10.7826,79.1317,4.9,4150,2023-12-15
+TN-HOG-01,Hogenakkal Coracle Falls,Dharmapuri,Dharmapuri,Tamil Nadu,Waterfall,26500,12.1156,77.7771,4.5,2100,2023-01-15
+TN-HOG-01,Hogenakkal Coracle Falls,Dharmapuri,Dharmapuri,Tamil Nadu,Waterfall,24000,12.1156,77.7771,4.4,1950,2023-05-15
+TN-HOG-01,Hogenakkal Coracle Falls,Dharmapuri,Dharmapuri,Tamil Nadu,Waterfall,31500,12.1156,77.7771,4.6,2600,2023-10-15
+TN-HOG-01,Hogenakkal Coracle Falls,Dharmapuri,Dharmapuri,Tamil Nadu,Waterfall,29200,12.1156,77.7771,4.5,2350,2023-12-15
+TN-CHI-01,Thillai Nataraja Temple,Chidambaram,Cuddalore,Tamil Nadu,Temple,23400,11.3992,79.6946,4.7,1950,2023-01-15
+TN-CHI-01,Thillai Nataraja Temple,Chidambaram,Cuddalore,Tamil Nadu,Temple,25800,11.3992,79.6946,4.7,2150,2023-12-15
+TN-COU-01,Courtallam Main Waterfalls,Courtallam,Tenkasi,Tamil Nadu,Waterfall,28500,8.9307,77.2744,4.4,2400,2023-07-15
+TN-COU-01,Courtallam Main Waterfalls,Courtallam,Tenkasi,Tamil Nadu,Waterfall,34200,8.9307,77.2744,4.5,2900,2023-08-15
+TN-COO-01,Sims Park & Tea Estates,Coonoor,Nilgiris,Tamil Nadu,Nature,18400,11.3530,76.7959,4.5,1450,2023-05-15
+TN-VAL-01,Valparai Anamalai Hills,Valparai,Coimbatore,Tamil Nadu,Hill Station,16200,10.3268,76.9506,4.5,1200,2023-05-15
+TN-MUD-01,Mudumalai Tiger Reserve & Sanctuary,Theppakadu,Nilgiris,Tamil Nadu,Wildlife,17800,11.5690,76.5537,4.6,1380,2023-05-15
+TN-DHA-01,Dhanushkodi Lands End & Ghost Town,Dhanushkodi,Ramanathapuram,Tamil Nadu,Coastal Heritage,22400,9.1722,79.4270,4.7,2100,2023-12-15
+TN-PIC-01,Pichavaram Mangrove Forests & Boating,Pichavaram,Cuddalore,Tamil Nadu,Eco-Tourism,18900,11.4167,79.7750,4.5,1600,2023-10-15
+TN-YEL-01,Yelagiri Hills & Lake,Yelagiri,Tirupathur,Tamil Nadu,Hill Station,14800,12.5802,78.6377,4.2,1100,2023-05-15
+TN-VED-01,Vedanthangal Bird Sanctuary,Vedanthangal,Chengalpattu,Tamil Nadu,Wildlife,15200,12.5456,79.8539,4.4,1250,2023-12-15
+TN-VEL-01,Vellore Jalakanteswarar Fort & Temple,Vellore,Vellore,Tamil Nadu,Historical Fort,20800,12.9165,79.1325,4.5,1750,2023-01-15
+

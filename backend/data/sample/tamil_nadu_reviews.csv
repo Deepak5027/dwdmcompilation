@@ -1,0 +1,61 @@
+review_id,destination_id,review_text,review_date,source_name,rating,language
+REV-001,TN-CHE-01,The early morning walk on Marina beach was refreshing with clean sand and gentle ocean breeze. Highly recommend visiting the lighthouse.,2023-01-18,Google Reviews,5.0,en
+REV-002,TN-CHE-01,Extremely crowded on Sunday evenings with heavy traffic around Kamarajar Salai. Beautiful sunset view nonetheless.,2023-02-10,TripAdvisor,3.0,en
+REV-003,TN-CHE-01,Great cultural atmosphere with local street food vendors and children playing. Cleanliness has improved significantly over the past year.,2023-03-22,Tourism Portal,4.0,en
+REV-004,TN-CHE-01,The promenade walk is great for fitness and family outings. Safe lighting and visible police patrol along the coastal stretch.,2023-04-14,Google Reviews,5.0,en
+REV-005,TN-CHE-01,Very hot during mid afternoon hours. Better to visit after 5 PM when cool sea breeze starts blowing across the shore.,2023-05-19,TravelBlog,4.0,en
+REV-006,TN-MAM-01,The UNESCO World Heritage monolithic rock relief of Arjuna Penance took my breath away. Intricate 7th-century Pallava architectural mastery.,2023-01-20,Google Reviews,5.0,en
+REV-007,TN-MAM-01,Shore temple with crashing waves in the background is a visual marvel. Very clean premises and knowledgeable ASI certified guides.,2023-02-15,TripAdvisor,5.0,en
+REV-008,TN-MAM-01,The Pancha Rathas monolithic rock temples are remarkably well preserved. Parking area was slightly congested during holiday weekend.,2023-03-18,Tourism Portal,4.0,en
+REV-009,TN-MAM-01,Wonderful stone sculptures and serene coastal vibes. A must-visit heritage attraction just one hour drive from Chennai on ECR.,2023-04-25,TravelBlog,5.0,en
+REV-010,TN-MAM-01,Fascinating historic site. Highly educational for students and heritage architecture enthusiasts alike.,2023-05-30,Google Reviews,5.0,en
+REV-011,TN-NIL-01,Breathtaking mountain scenery and misty weather. The Nilgiri Mountain Railway toy train ride was an unforgettable lifelong experience.,2023-01-12,Google Reviews,5.0,en
+REV-012,TN-NIL-01,Ooty lake boating is peaceful on weekday mornings. Botanical gardens boast an impressive collection of exotic flora and century-old trees.,2023-02-28,TripAdvisor,5.0,en
+REV-013,TN-NIL-01,Peak summer season brings massive tourist influx leading to hill traffic jams near Doddabetta peak. Plan visits early in the day.,2023-05-10,TravelBlog,3.0,en
+REV-014,TN-NIL-01,Crisp mountain air with sprawling emerald tea plantations stretching across the valleys. Excellent local homemade chocolates.,2023-06-18,Google Reviews,5.0,en
+REV-015,TN-NIL-01,Pleasant cool climate providing supreme respite from mainland heat. Rose garden was in full vibrant bloom.,2023-07-22,Tourism Portal,5.0,en
+REV-016,TN-KOD-01,The star-shaped Kodaikanal lake surrounded by towering pine trees is pure natural bliss. Cycling around the perimeter was delightful.,2023-01-25,Google Reviews,5.0,en
+REV-017,TN-KOD-01,Coakers Walk offers breathtaking panoramic valley views engulfed in drifting clouds. Truly the Princess of Hill Stations.,2023-03-12,TripAdvisor,5.0,en
+REV-018,TN-KOD-01,"Pillar Rocks view was partially obscured by dense fog, but the mystical atmosphere was enchanting. Clean and well-maintained pathways.",2023-04-18,TravelBlog,4.0,en
+REV-019,TN-KOD-01,"Bryant Park flowers were gorgeous. Calm, romantic weather with comfortable accommodation choices nearby.",2023-05-22,Tourism Portal,5.0,en
+REV-020,TN-KOD-01,"Heavy rain showers during monsoon made steep viewpoints slippery, but the waterfalls were flowing in full majestic glory.",2023-08-14,Google Reviews,4.0,en
+REV-021,TN-MDU-01,Meenakshi Amman Temple is a spiritual and architectural wonder. The thousand pillar hall and towering gopurams are magnificent.,2023-01-10,Google Reviews,5.0,en
+REV-022,TN-MDU-01,Deep spiritual resonance and divine atmosphere. Queue management system was efficient despite thousands of morning pilgrims.,2023-02-14,TripAdvisor,5.0,en
+REV-023,TN-MDU-01,Intricate Dravidian stone carvings and vibrant temple paintings. Evening aarthi ceremony was deeply moving and serene.,2023-03-20,Tourism Portal,5.0,en
+REV-024,TN-MDU-01,Baggage and mobile lockers outside temple were well organized. A truly awe-inspiring living monument of ancient Tamil civilization.,2023-04-08,TravelBlog,5.0,en
+REV-025,TN-MDU-01,"Crowded during Chithirai festival, but the spiritual energy of Madurai city is incomparable. Delicious traditional jigarthanda nearby.",2023-05-04,Google Reviews,5.0,en
+REV-026,TN-RAM-01,Walking through the majestic third corridor of Ramanathaswamy Temple with over 1200 sculpted pillars is deeply humbling.,2023-01-15,Google Reviews,5.0,en
+REV-027,TN-RAM-01,Spiritual bath in the 22 sacred theerthams within the temple complex was a purifying and peaceful ritual experience.,2023-02-20,TripAdvisor,5.0,en
+REV-028,TN-RAM-01,Pamban rail bridge offering turquoise sea views on both sides as train crosses the ocean is an engineering and scenic marvel.,2023-03-25,TravelBlog,5.0,en
+REV-029,TN-RAM-01,Clean holy beach at Agni Theertham with sunrise view over the Bay of Bengal. Highly revered pilgrimage destination.,2023-04-11,Tourism Portal,4.0,en
+REV-030,TN-RAM-01,Divine sanctum with rich historical epics associated with Lord Rama. Peaceful atmosphere inside the grand corridors.,2023-05-18,Google Reviews,5.0,en
+REV-031,TN-KAN-01,Standing at the southernmost tip of peninsular India where three oceans meet. Sunset and moonrise occurring simultaneously was surreal.,2023-01-05,Google Reviews,5.0,en
+REV-032,TN-KAN-01,Ferry ride to Vivekananda Rock Memorial was well organized and scenic. Deeply serene meditation hall on the rocky island.,2023-02-18,TripAdvisor,5.0,en
+REV-033,TN-KAN-01,The 133-foot stone statue of saint poet Thiruvalluvar standing majestically amidst ocean waves is a monumental tribute to Tamil literature.,2023-03-30,Tourism Portal,5.0,en
+REV-034,TN-KAN-01,Windy coastal breeze and sparkling multi-colored sand beach. Gandhi Memorial has impressive architectural alignment with sunrise.,2023-04-22,TravelBlog,4.0,en
+REV-035,TN-KAN-01,"Queue for the island ferry was long during public holiday, but the rock memorial experience was worth every minute of waiting.",2023-05-28,Google Reviews,4.0,en
+REV-036,TN-YER-01,"Yercaud is a peaceful, unhurried alternative to crowded hill stations. Lake boat ride is calm and surrounded by lush green slopes.",2023-01-28,Google Reviews,4.0,en
+REV-037,TN-YER-01,Ladys Seat offers sweeping views of Salem city below especially during dusk when lights begin glowing in the plains.,2023-03-05,TripAdvisor,4.0,en
+REV-038,TN-YER-01,Affordable and pleasant weekend getaway from Bangalore or Chennai. Refreshing coffee estates with fragrant blossoms.,2023-04-15,Tourism Portal,4.0,en
+REV-039,TN-YER-01,"Kiliyur falls requires a steep hike down the rocky gorge, but the secluded forest waterfall is scenic and quiet.",2023-06-20,TravelBlog,4.0,en
+REV-040,TN-YER-01,Pagoda point view was scenic. Less commercialized which gives it a charming vintage hill station character.,2023-07-15,Google Reviews,5.0,en
+REV-041,TN-THA-01,The Brihadisvara Big Temple in Thanjavur is the pinnacle of Chola imperial architecture. The massive granite vimana shadow never ceases to amaze.,2023-01-08,Google Reviews,5.0,en
+REV-042,TN-THA-01,UNESCO World Heritage site with extraordinary 1000-year-old fresco murals and stone inscriptions documenting ancient governance.,2023-02-22,TripAdvisor,5.0,en
+REV-043,TN-THA-01,The gigantic monolithic Nandi bull carved from a single rock block is awe-inspiring. Immaculate ASI garden landscaping.,2023-03-15,Tourism Portal,5.0,en
+REV-044,TN-THA-01,Evening illumination turns the golden granite temple into a breathtaking celestial sight against the twilight sky.,2023-04-20,TravelBlog,5.0,en
+REV-045,TN-THA-01,Fascinating cultural richness. Royal Palace Museum and Saraswathi Mahal library nearby contain invaluable ancient palm-leaf manuscripts.,2023-05-25,Google Reviews,5.0,en
+REV-046,TN-HOG-01,The Niagara of India! Coracle boat ride through the deep Kaveri river gorge with roaring waterfalls all around is thrilling.,2023-01-14,Google Reviews,5.0,en
+REV-047,TN-HOG-01,Natural herbal oil massage by traditional masseurs followed by a bath under the gushing therapeutic waterfalls was rejuvenating.,2023-03-10,TripAdvisor,4.0,en
+REV-048,TN-HOG-01,Freshly caught Kaveri river fish fried with local spices served hot by the riverside. Memorable rustic tourism outing.,2023-04-05,Tourism Portal,5.0,en
+REV-049,TN-HOG-01,Boating safety has improved with mandatory life jackets for all passengers. The rock canyon formations are stunning geological sights.,2023-06-12,TravelBlog,4.0,en
+REV-050,TN-HOG-01,Water flow was high during post-monsoon months creating majestic cascading white water curtains across the rocky valley.,2023-10-18,Google Reviews,5.0,en
+REV-051,TN-DHA-01,Dhanushkodi ghost town ruins submerged in sand with turquoise ocean on both sides feels like the edge of the world.,2023-01-22,Google Reviews,5.0,en
+REV-052,TN-DHA-01,The ruined church and railway station preserved from the 1964 cyclone carry poignant historical resonance. Pristine white sands.,2023-02-17,TripAdvisor,5.0,en
+REV-053,TN-DHA-01,Arichal Munai lands end where Bay of Bengal meets Indian Ocean is stunning. Excellent paved highway now allows easy car access.,2023-03-28,Tourism Portal,5.0,en
+REV-054,TN-DHA-01,"Remote, windy and spiritually magnetic location. You can gaze toward Sri Lanka coastline across the Rama Setu sandbanks.",2023-04-19,TravelBlog,5.0,en
+REV-055,TN-PIC-01,Pichavaram is the second largest mangrove forest in the world. Rowboat ride through narrow natural mangrove water canals is surreal.,2023-01-30,Google Reviews,5.0,en
+REV-056,TN-PIC-01,Dense green tree canopy arching over crystal clear backwaters. Spotting migratory birds resting on stilt roots was delightful.,2023-02-25,TripAdvisor,5.0,en
+REV-057,TN-COU-01,Courtallam waterfalls carry therapeutic herbal properties from Western Ghats forests. Natural open-air water massage like no other.,2023-07-20,Google Reviews,5.0,en
+REV-058,TN-COU-01,Chitraruvi and Main Falls were flowing abundantly during the Saaral season. Refreshing cool mountain spray on a sunny day.,2023-08-15,TripAdvisor,4.0,en
+REV-059,TN-MUD-01,"Elephant camp visit and safari inside Mudumalai tiger reserve. Saw wild herds of spotted deer, gaur bison, and vibrant peacocks.",2023-05-12,Google Reviews,5.0,en
+REV-060,TN-VEL-01,Vellore Fort surrounded by a massive water moat is a brilliant example of 16th-century Vijayanagara military defense architecture.,2023-01-16,Google Reviews,4.0,en

@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.mypy_cache/
+.pytest_cache/
+
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# Backend
+backend/.env
+backend/uploads/
+backend/data/*.sqlite
+backend/data/tourism_dw.sqlite
+backend/htmlcov/
+backend/.coverage
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Temporary
+tmp/
+temp/
+
