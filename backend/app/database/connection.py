@@ -20,8 +20,8 @@ _SessionLocal = None
 _database_mode = "unknown"
 
 
-def _try_mysql_connection():
-    """Attempt to connect to MySQL and return an engine if successful."""
+def _try_primary_connection():
+    """Attempt to connect to primary database (Supabase/PostgreSQL or MySQL) and return an engine if successful."""
     try:
         engine = create_engine(
             settings.database_url,
@@ -29,16 +29,17 @@ def _try_mysql_connection():
             max_overflow=10,
             pool_pre_ping=True,
             pool_recycle=3600,
-            connect_args={"connect_timeout": 5},
+            connect_args={"connect_timeout": 10},
             echo=False,
         )
         # Test the connection
         with engine.connect() as conn:
             conn.execute(text("SELECT 1"))
-        logger.info("Successfully connected to MySQL database: %s", settings.db_name)
+        db_type = "Supabase / PostgreSQL" if "postgresql" in settings.database_url else "MySQL"
+        logger.info("Successfully connected to %s database: %s", db_type, settings.db_name)
         return engine
     except Exception as e:
-        logger.warning("MySQL connection failed: %s", str(e))
+        logger.warning("Primary database connection failed: %s", str(e))
         return None
 
 
@@ -67,23 +68,28 @@ def _create_sqlite_connection():
 
 
 def _initialize_engine():
-    """Initialize the database engine with MySQL primary and SQLite fallback."""
+    """Initialize the database engine with Supabase / MySQL primary and SQLite fallback."""
     global _engine, _SessionLocal, _database_mode
 
     if _engine is not None:
         return
 
-    # Try MySQL first
-    _engine = _try_mysql_connection()
+    # Try Primary database first (Supabase / Postgres / MySQL)
+    _engine = _try_primary_connection()
     if _engine is not None:
-        _database_mode = "mysql"
+        if "supabase" in settings.database_url:
+            _database_mode = "supabase"
+        elif "postgresql" in settings.database_url:
+            _database_mode = "postgresql"
+        else:
+            _database_mode = "mysql"
     elif settings.db_fallback_sqlite:
         # Fall back to SQLite
         _engine = _create_sqlite_connection()
         _database_mode = "sqlite"
     else:
         raise RuntimeError(
-            "Cannot connect to MySQL and SQLite fallback is disabled. "
+            "Cannot connect to primary database and SQLite fallback is disabled. "
             "Check database configuration."
         )
 
@@ -103,7 +109,7 @@ def get_session_factory():
 
 
 def get_database_mode() -> str:
-    """Return which database backend is in use ('mysql' or 'sqlite')."""
+    """Return which database backend is in use ('supabase', 'postgresql', 'mysql', or 'sqlite')."""
     _initialize_engine()
     return _database_mode
 
@@ -116,12 +122,22 @@ def check_db_health() -> dict:
             _initialize_engine()
         with _engine.connect() as conn:
             conn.execute(text("SELECT 1"))
+
+        if _database_mode == "supabase":
+            engine_name = "Supabase (PostgreSQL)"
+        elif _database_mode == "postgresql":
+            engine_name = "PostgreSQL"
+        elif _database_mode == "mysql":
+            engine_name = "MySQL 8.0"
+        else:
+            engine_name = "SQLite (Fallback)"
+
         return {
             "status": "connected",
             "dialect": _database_mode,
-            "engine": "MySQL 8.0" if _database_mode == "mysql" else "SQLite (Fallback)",
-            "database_name": settings.db_name if _database_mode == "mysql" else "tourism_dw.sqlite",
-            "host": f"{settings.db_host}:{settings.db_port}" if _database_mode == "mysql" else "local",
+            "engine": engine_name,
+            "database_name": settings.db_name if _database_mode != "sqlite" else "tourism_dw.sqlite",
+            "host": f"{settings.db_host}:{settings.db_port}" if _database_mode != "sqlite" else "local",
         }
     except Exception as e:
         return {

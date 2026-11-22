@@ -19,8 +19,8 @@ env/
 # Backend
 backend/.env
 backend/uploads/
-backend/data/*.sqlite
-backend/data/tourism_dw.sqlite
+backend/data/*.sqlite*
+backend/data/tourism_dw.sqlite*
 backend/htmlcov/
 backend/.coverage
 

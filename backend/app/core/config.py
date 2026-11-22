@@ -59,9 +59,22 @@ class Settings(BaseSettings):
 
     @property
     def database_url(self) -> str:
-        """MySQL connection URL with properly escaped credentials."""
+        """Database connection URL with properly escaped credentials supporting PostgreSQL/Supabase and MySQL."""
         user = quote_plus(self.db_user) if self.db_user else ""
         password_part = f":{quote_plus(self.db_password)}" if self.db_password else ""
+
+        is_postgres = (
+            "supabase" in self.db_host.lower()
+            or "postgres" in self.db_host.lower()
+            or self.db_port in [5432, 6543]
+        )
+
+        if is_postgres:
+            return (
+                f"postgresql+psycopg2://{user}{password_part}"
+                f"@{self.db_host}:{self.db_port}/{self.db_name}"
+            )
+
         return (
             f"mysql+pymysql://{user}{password_part}"
             f"@{self.db_host}:{self.db_port}/{self.db_name}"
